@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /***** S T R I N G S *****/
+
+      /*--Slice, UpperCase, LowerCase y Trim--*/
+
+      var titulo = "  Oceano Practico Deutsch-Spanish   ";
+      var opcional = titulo.slice(9, 17);
+      console.log(opcional);
+      var trim = titulo.trim();
+      console.log(trim);
+
+      var mayus = titulo.toUpperCase();
+      var minus = titulo.toLowerCase();
+      console.log(minus);
+      console.log(mayus);
+
+      /*---charAt y repeat---*/
+
+      var nombro = "Diego M";
+      var letra = nombro.charAt(6);
+      console.log(letra);
+      var dosVeces = nombro.repeat(2);
+      console.log(dosVeces);
+
+      /*--Replace y valueOf--*/
+
+      var mensaje = "El lobo espera ver un colibri";
+      var nuevoMensaje = mensaje.replace(/colibri/i, "pato");
+      console.log(nuevoMensaje);
+
+      console.log(mensaje.endsWith("pato"));
+
+      /***** A R R A Y S *****/
+
+      /*---Reverse y join----*/
+
+      var nombre = "Diego";
+
+      var array = nombre.split("");
+      console.log(array);
+
+      var reverseArray = array.reverse();
+      console.log(reverseArray);
+
+      var joinArray = array.join("");
+      console.log(joinArray);
+
+      /*---shift y unshift---*/
+
+      var neim = ["Diego", "M"];
+
+      var shifted = neim.shift();
+      console.log(neim);
+      console.log(shifted);
+
+      var nav = ["Edge", "Mozilla", "Chrome"];
+
+      var unshifted = nav.unshift("otro");
+      console.log(nav);
+
+      /*---sort---*/
+      var celulares = ["Xiaomi", "Iphone", "Samsung", "Nokia", "Lenovo"];
+      var mejores = celulares.sort();
+      console.log(mejores);
+
+      var someArray = [4, 11, 3, 2, 105, -2, 44, "uno", "1"];
+
+      var menor = someArray.sort((a, b) => a - b);
+      console.log(menor);
+
+      var mayor = someArray.sort((a, b) => b - a);
+      console.log(mayor);
+    </script>
+  </body>
+</html>
